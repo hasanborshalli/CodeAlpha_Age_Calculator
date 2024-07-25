@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Age Calculator</title>
+    </head>
+    <body>
+        <h1 class="header">Age Calculator</h1>
+        <div class="container">
+            <div class="inputs-container">
+                <div class="input-group">
+                    <label for="birthDate">Date of Birth</label>
+                    <input
+                        type="date"
+                        id="birthDate"
+                        placeholder="mm/dd/yyyy"
+                    />
+                </div>
+                <div class="input-group">
+                    <label for="currentDate">Current Age or Age as of</label>
+                    <input
+                        type="date"
+                        id="currentDate"
+                        placeholder="mm/dd/yyyy"
+                    />
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="calculateButton" onclick="calculateAgeDifference()">
+                    Calculate
+                </button>
+            </div>
+            <div class="result" id="counters">
+                <div class="result-item">
+                    <div class="result-value" id="yearsCount">0</div>
+                    <div class="result-label">Years</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value" id="monthsCount">0</div>
+                    <div class="result-label">Months</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value" id="weeksCount">0</div>
+                    <div class="result-label">Weeks</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value" id="daysCount">0</div>
+                    <div class="result-label">Days</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value" id="hoursCount">0</div>
+                    <div class="result-label">Hours</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-value" id="minutesCount">0</div>
+                    <div class="result-label">Minutes</div>
+                </div>
+                <div class="result-item" id="result-age">
+                    <div class="result-value" id="fullAge"></div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

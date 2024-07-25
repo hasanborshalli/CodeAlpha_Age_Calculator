@@ -1,0 +1,113 @@
+body {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #2d3748;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    min-height: 100vh;
+}
+.header {
+    color: #007bff;
+}
+.container {
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+@media (min-width: 600px) {
+    .inputs-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.input-group {
+    flex: 1;
+    margin: 0 10px;
+}
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.input-group input {
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.button-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.result {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.result-item {
+    flex: 1 0 200px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.result-value {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #007bff;
+}
+.result-label {
+    font-size: 20px;
+    color: #666;
+}
+#result-age {
+    display: none;
+}
+@media (max-width: 800px) {
+    #fullAge {
+        font-size: 25px;
+    }
+}
